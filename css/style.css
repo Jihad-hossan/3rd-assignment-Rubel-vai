@@ -48,93 +48,81 @@
 header{
     width: 100%;
     min-height: 115vh;
-    background: url('../Image/Base.png');
+    background: url('../Image/Header.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-header nav .logo{
-    float: left;
-}
-#check {
-    display: none;
-}
-header nav .signup {
-    position: absolute;
-    left: 80%;
-    top: 50px;
-    display: inline-block;
+
+header .signup-btn .btn{
     border: 1px solid #6ebf7c;
     border-radius: 20px;
     background-color: #6ebf7c;
-    padding: 5px 20px;
-    transition: .3s;
+    padding: 8px 20px;
+    font-size: 1.7rem;
+    margin-top: 2.5rem;
+    transition: 1.5s;
 }
-header nav .navbar1 .signup:hover, header nav .navbar1 .signup:focus{
-    background-color: transparent;
-    color: #6ebf7c;
+header .signup-btn img{
+    margin-left: 8rem;
+}
+header .signup-btn .btn:hover, header .signup-btn .btn:focus{
+    background-color: #6ebf7c;
+    color: #fff;
     border-color: #6ebf7c;
 }
-
-header nav .navbar1 {
-    width: 50%;
-    height: 115vh;
-    position: absolute;
-    /* right: -100%; */
-    top: -30%;
-    display: none;
-    transition: 2s;
-
-}
-/* humburger styling */
-#check:checked~.navbar1 {
-    right: -18.3%;
-    display: inline-block;
-    z-index: 100;
-} 
-header nav{
-    position: relative;
-}
-header nav .cancel {
-    position: absolute;
-    right: 15%;
-    top: 40px;
-    display: inline-block;
-}
-header .humburger {
-    position: absolute;
-    left: 95%;
-    top: 50px;
-    display: inline-block;
-}
-header nav .navbar1 ul{
-    list-style: none;
+/* .nav {
+    position: fixed;
+    top: 0;
     
+} */
+.navbar1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100vh;
+    display: none;
 }
-header nav .navbar1 ul a{
+.navbar1 .cancel{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    padding: 6px;
+    box-shadow: 2px 2px 5px rgb(233, 215, 215);
+    border-radius: 50%;
+}
+.navbar1 ul {
+    list-style: none;
+}
+.navbar1 ul li a{
     text-decoration: none;
     color: black;
-    font-family: 'KoHo', sans-serif;
     font-weight: 700;
-    font-size: 1.6rem;
-    transition: .2s;
+    font-size: 1.7rem;
+    transition: .3s;
 }
-header nav .navbar1 ul a:hover, header nav .navbar1 ul a:focus{
+.navbar1 ul li a:hover {
     color: #4c8bf5;
 }
-header nav .navbar1 .btn{
+.navbar1 .btn {
     border: 1px solid #4c8bf5;
     border-radius: 20px;
     background-color: #4c8bf5;
-    padding: 5px 15px;
+    padding: 8px 20px;
+    font-size: 1.7rem;
+    transition: 1s;
 }
-header nav .navbar1 .btn:hover, header nav .navbar1 .btn:focus{
-    background-color: transparent;
-    color: #4c8bf5;
-    border-color: #4c8bf5;
+.navbar1 .btn:hover, .navbar1 .btn:focus{
+    background-color: #6ebf7c;
+    color: #fff;
+    border-color: #6ebf7c;
 }
 /* nav section end */
 
 /* banner section start */
+header .banner-text{
+    margin-top: 15rem !important;
+}
 header h1 {
     font-size: 4rem;
     line-height: 5rem;
@@ -157,7 +145,7 @@ header .call-btn{
     background-color: #4c8bf5;
     padding: 8px 20px;
     font-size: 1.7rem;
-    transition: 1.5s;
+    transition: 1s;
 }
 header .tips-btn{
     border: 1px solid #fff;
@@ -169,6 +157,11 @@ header .tips-btn{
     margin-left: 2rem;
     font-size: 1.7rem;
     transition: 1s;
+}
+header .btn:hover, header .btn:focus{
+    background-color: #6ebf7c;
+    color: #fff;
+    border-color: #6ebf7c;
 }
 /* **** values section start***** */
 .values .icon .card{
@@ -223,7 +216,7 @@ header .tips-btn{
     background-color: #4c8bf5;
     padding: 8px 25px;
     font-size: 1.7rem;
-    transition: 1.5s;
+    transition: 1s;
 }
 .great-tool .below-heading .tips-btn{
     border: 1px solid #fff;
@@ -237,9 +230,9 @@ header .tips-btn{
     transition: 1s;
 }
 .great-tool .below-heading .btn:hover, .great-tool .below-heading .btn:focus{
-    background-color: #376dca;
+    background-color: #6ebf7c;
     color: #fff;
-    border-color: #4c8bf5;
+    border-color: #6ebf7c;
 }
 /* ********** great tool section end*********** */
 
@@ -300,7 +293,7 @@ header .tips-btn{
     padding: 8px 25px;
     font-size: 1.7rem;
     box-shadow: 1px 1px 1rem #c3cbda;
-    transition: 1.5s;
+    transition: 1s;
 }
 .functionality .below-heading .tips-btn{
     border: 1px solid #fff;
@@ -315,9 +308,9 @@ header .tips-btn{
     transition: 1s;
 }
 .functionality .below-heading .btn:hover, .functionality .below-heading .btn:focus{
-    background-color: #376dca;
+    background-color: #6ebf7c;
     color: #fff;
-    border-color: #4c8bf5;
+    border-color: #6ebf7c;
 }
 /* **** functionality section end****** */
 
@@ -455,135 +448,145 @@ header .tips-btn{
 /* ******* getting started section end******** */
 
 /* ****** testimonial section start ******* */
-.testimonial{
-    width: 100vw;
-    background: url('../Image/bg.png') no-repeat center center;
+.testimonial-section{
+    background: url('../Image/Testimonials.png') no-repeat center;
     background-size: 100% 100%;
-    clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
-    padding: 70px 0 !important;
-    box-sizing: border-box;
 }
-.testimonial .color3{
+.testimonial-section .container-sp{
+    width: 95vw;
+    margin: 0 auto;
+}
+.testimonial-section .heading h2{
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+}
+.testimonial-section .heading .color3{
     color: #6ebf7c;
 }
-.testimonial .carousel{
-    position: relative;
+.testimonial-section .carousel .carousel-indicators{
+    bottom: -30px;
 }
-.testimonial .carousel .carousel-inner p{
+.testimonial-section .carousel .carousel-inner .carousel-item{
+    height: 400px;
+}
+.testimonial-section .carousel .carousel-inner .carousel-item p{
     font-size: 1.7rem;
-}
-.testimonial .carousel .carousel-inner h6{
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-.testimonial .carousel .carousel-inner{
-    position: relative;
-}
-.testimonial .carousel .carousel-inner .item {
-    /* width: 100%; */
-    position: relative;
-}
-.testimonial .carousel .carousel-inner .client4{
-    position: absolute;
-    right: 10%;
-    bottom: 0;
-}
-.testimonial .carousel .carousel-inner .client5{
-    position: absolute;
-    right: 10%;
-    top: 0;
-}
-.testimonial .carousel .carousel-inner .client6{
-    position: absolute;
-    right: 20%;
-    top: 40%;
-}
-.testimonial .carousel .carousel-inner .client2{
-    position: absolute;
-    left: 20%;
-    top: 40%;
-}
-.testimonial .carousel .carousel-inner .client3{
-    position: absolute;
-    left: 10%;
-    top: 0;
-}
-.testimonial .carousel .carousel-inner .client7{
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-}
-/* slide 2 */
-.testimonial .carousel .carousel-inner .slide2 .client4{
-    position: absolute;
-    right: 10%;
-    bottom: 0;
-}
-.testimonial .carousel .carousel-inner .slide2 .client5{
-    position: absolute;
-    right: 10%;
-    top: 0;
-}
-.testimonial .carousel .carousel-inner .slide2 .client6{
-    position: absolute;
-    right: 20%;
-    top: 40%;
-}
-.testimonial .carousel .carousel-inner .slide2 .client1{
-    position: absolute;
-    left: 20%;
-    top: 40%;
-}
-.testimonial .carousel .carousel-inner .slide2 .client3{
-    position: absolute;
-    left: 10%;
-    top: 0;
-}
-.testimonial .carousel .carousel-inner .slide2 .client7{
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-}
-/* slide 2 end */
-/* slide 3 start */
-.testimonial .carousel .carousel-inner .slide3 .client4{
-    position: absolute;
-    right: 10%;
-    bottom: 0;
-}
-.testimonial .carousel .carousel-inner .slide3 .client5{
-    position: absolute;
-    right: 10%;
-    top: 0;
-}
-.testimonial .carousel .carousel-inner .slide3 .client6{
-    position: absolute;
-    right: 20%;
-    top: 40%;
-}
-.testimonial .carousel .carousel-inner .slide3 .client1{
-    position: absolute;
-    left: 20%;
-    top: 40%;
-}
-.testimonial .carousel .carousel-inner .slide3 .client2{
-    position: absolute;
-    left: 10%;
-    top: 0;
-}
-.testimonial .carousel .carousel-inner .slide3 .client7{
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-}
-/* slide 3 end */
-.testimonial .carousel .carousel-indicators{
-    position: absolute;
-    bottom: -10%;
-    left: 50%;
+    line-height: 2.5rem;
 }
 
-.testimonial .below-heading .call-btn{
+.testimonial-section .carousel .carousel-inner .one{
+    position: relative;
+}
+.testimonial-section .carousel .carousel-inner .carousel-item .main{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    
+}
+.testimonial-section .carousel .carousel-inner .one .client2{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.testimonial-section .carousel .carousel-inner .one .client3{
+    position: absolute;
+    top: 45%;
+    right: 20%;
+}
+.testimonial-section .carousel .carousel-inner .one .client4{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.testimonial-section .carousel .carousel-inner .one .client5{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.testimonial-section .carousel .carousel-inner .one .client6{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.testimonial-section .carousel .carousel-inner .one .client7{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+/* one slide end */
+
+/* second slide start */
+.testimonial-section .carousel .carousel-inner .two{
+    position: relative;
+}
+.testimonial-section .carousel .carousel-inner .two .client1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.testimonial-section .carousel .carousel-inner .two .client3{
+    position: absolute;
+    top: 45%;
+    right: 20%;
+}
+.testimonial-section .carousel .carousel-inner .two .client4{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.testimonial-section .carousel .carousel-inner .two .client5{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.testimonial-section .carousel .carousel-inner .two .client6{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.testimonial-section .carousel .carousel-inner .two .client7{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+/* slide two end */
+
+/* slide three start */
+.testimonial-section .carousel .carousel-inner .three{
+    position: relative;
+}
+.testimonial-section .carousel .carousel-inner .three .client1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.testimonial-section .carousel .carousel-inner .three .client2{
+    position: absolute;
+    top: 45%;
+    right: 20%;
+}
+.testimonial-section .carousel .carousel-inner .three .client4{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+.testimonial-section .carousel .carousel-inner .three .client5{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.testimonial-section .carousel .carousel-inner .three .client6{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.testimonial-section .carousel .carousel-inner .three .client7{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+.testimonial-section .below-heading .call-btn{
     border: 1px solid #4c8bf5;
     border-radius: 20px;
     background-color: #4c8bf5;
@@ -592,7 +595,7 @@ header .tips-btn{
     box-shadow: 1px 1px 1rem #c3cbda;
     transition: 1s;
 }
-.testimonial .below-heading .tips-btn{
+.testimonial-section .below-heading .tips-btn{
     border: 1px solid #fff;
     border-radius: 20px;
     background-color: #fff;
@@ -604,7 +607,7 @@ header .tips-btn{
     box-shadow: 1px 1px 1rem #c3cbda;
     transition: 1s;
 }
-.testimonial .below-heading .btn:hover, .testimonial .below-heading .btn:focus{
+.testimonial-section  .below-heading .btn:hover, .testimonial-section  .below-heading .btn:focus{
     background-color: #6ebf7c;
     color: #fff;
     border-color: #6ebf7c;
@@ -615,6 +618,7 @@ header .tips-btn{
 .stop-wasting-time  .heading h2{
     font-size: 3.2rem;
     line-height: 4.5rem;
+    font-weight: 700;
 }
 .stop-wasting-time .heading .color3{
     color: #6ebf7c;
@@ -728,6 +732,9 @@ footer .inner-footer .btn:hover, footer .inner-footer .btn:focus{
 .modal .modal-header .color3{
     color: #5a78af;
 }
+.modal .modal-body{
+    background: url('../Image/plane-with-path.png') no-repeat center center;
+}
 .modal .modal-body .text{
     padding: 1rem;
     padding-right: 4rem;
@@ -736,4 +743,465 @@ footer .inner-footer .btn:hover, footer .inner-footer .btn:focus{
 }
 .modal .modal-body .color2{
     color: #6ebf7c;
+}
+.modal .modal-body form {
+    width: 80%;
+    margin: 10px auto;
+}
+.modal .modal-body .form-control{
+    border-color: #fb8c8c;
+}
+.modal .call-btn{
+    border: 1px solid #4c8bf5;
+    border-radius: 20px;
+    background-color: #4c8bf5;
+    padding: 8px 20px;
+    font-size: 1.7rem;
+    transition: 1s;
+}
+.modal .btn:hover, .modal .btn:focus{
+    background-color: #6ebf7c;
+    color: #fff;
+    border-color: #6ebf7c;
+}
+/* *** modal one end*** */
+
+/* *** modal two start ** */
+#myModal2 .modal-body{
+    background: url('../Image/plane-with-path2.png') no-repeat center center;
+}
+/* *** modal two end** */
+
+
+/* 
+********** media query start here *************
+*/
+@media (min-width: 1201px) and (max-width: 1320px){
+    header .call-btn{
+        font-size: 1.2rem;
+    }
+    header .tips-btn{
+        font-size: 1.2rem;
+    }
+    .getting-started .body .card{
+        height: 500px;
+    }
+}
+
+/* ***** media query for 992 to 1200px start******* */
+@media (min-width: 992px) and (max-width: 1200px){
+    header .signup-btn .btn {
+        border: 1pxsolid #6ebf7c;
+        border-radius: 20px;
+        background-color: #6ebf7c;
+        padding: 4px 10px;
+        font-size: 1.3rem;
+        margin-top: 2.5rem;
+        transition: 1.5s;
+    }
+    header .signup-btn img {
+        margin-left: 4rem;
+        margin-top: 2rem !important;
+    }
+    header .tips-btn {
+    margin-top: 1rem;
+    margin-left: 0;
+    }
+
+    /* start values */
+.values {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+.values .icon .card {
+    width: 90%;
+    height: 350px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+}
+
+/* functionality start */
+.functionality .body .icon {
+    margin-top: 0 !important;
+}
+/* getting started start here */
+.getting-started .body .card {
+    height: 500px;
+}
+}
+
+/* **** media query for 768px to 991px start **** */
+@media (min-width: 768px) and (max-width: 991px){
+    header {
+        min-height: 100vh;
+    }
+    header .signup-btn .btn {
+        display: none;
+    }
+    header .banner-text {
+        margin-top: 0!important;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        line-height: 5rem;
+    }
+    header p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    header .call-btn {
+        padding: 4px 15px;
+        font-size: 1.5rem;
+    }
+    header .tips-btn {
+        padding: 4px 15px;
+        font-size: 1.5rem;
+    }
+    /* great tool start */
+    .great-tool .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .functionality .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .functionality .body .icon {
+    margin-top: 0!important;
+    }
+    .what-we-do .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .getting-started .cards .p-5{
+        padding: 10px !important;
+    }
+    .getting-started .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .getting-started .cards {
+        padding-top: 80px;
+    }
+    .getting-started .below-heading h3 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    /* testimonial section start */
+    .testimonial-section .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item .main {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item>img{
+        display: none;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item {
+        height: 325px;
+    }
+    .stop-wasting-time .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    /* stop wasting time start */
+    .stop-wasting-time .below-heading {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    /* footer section start */
+    footer {
+        clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+/* *******
+media query 576px to 767px 
+******* */
+@media (min-width: 576px) and (max-width: 767px){
+    .navbar1{
+        width: 55%;
+        height: auto;
+    }
+    .navbar1 img{
+        width: 80% !important;
+    }
+    .navbar1 ul {
+        margin-top: 0 !important;
+    }
+    header .signup-btn .btn {
+        display: none;
+    }
+    header .banner-text {
+        margin-top: 0!important;
+    }
+    header h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    header .tips-btn {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+    /* values section start */
+    .values {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    /* great tool section start */
+    .great-tool {
+        background: url(../Image/bg.png) no-repeat center center;
+        background-size: 100% 100%;
+        clip-path: polygon(0 .5%, 100% 0%, 100% 99%, 0% 100%) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .great-tool .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .great-tool .below-heading .tips-btn {
+        margin-top: 1rem;
+    }
+    /* functionality section start */
+    .functionality .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .functionality .body .main-img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .functionality .body .icon {
+        margin-top: 0!important;
+        text-align: center;
+    }
+    .functionality .below-heading .tips-btn {
+       margin-top: 1rem;
+    }
+    /* what-we-do start */
+    .what-we-do {
+        clip-path: polygon(0 .2%, 100% 0%, 100% 99.8%, 0% 100%);
+    }
+    .what-we-do .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .what-we-do .body h4 {
+        font-size: 2rem;
+    }
+    .what-we-do .body img{
+        width: 60%;
+    }
+    /* getting started start */
+    .getting-started{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .getting-started .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .getting-started .cards {
+        padding-top: 50px;
+    }
+    .getting-started .cards .body{
+        padding: 0 0 50px 0 !important;
+    }
+    .getting-started .tips-btn {
+        margin-top: 1rem;
+    }
+    /* testimonial start */
+    .testimonial-section .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item .main {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item>img{
+        display: none;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item {
+        height: 325px;
+    }
+    /* stop wasting time */
+    .stop-wasting-time .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .stop-wasting-time .body .text-center img{
+        width: 50%;
+    }
+    .stop-wasting-time .below-heading .tips-btn {
+     margin-top: 1rem;
+    }
+    .stop-wasting-time .below-heading{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    /* footer start */
+    footer {
+        clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    footer .below-heading .tips-btn {
+       margin-top: 1rem;
+    }
+}
+/* *********
+media query for 320px to 575px
+********* */
+@media (min-width: 320px) and (max-width: 575px){
+    .navbar1{
+        width: 55%;
+        height: auto;
+    }
+    .navbar1 img{
+        width: 80% !important;
+    }
+    .navbar1 ul {
+        margin-top: 0 !important;
+    }
+    header .signup-btn .btn {
+        display: none;
+    }
+    header .banner-text {
+        margin-top: 0!important;
+    }
+    header h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    header .tips-btn {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+    /* values start */
+    .values .icon .card {
+        width: 50%;
+    }
+    /* great tool start */
+    .great-tool {
+        background: url(../Image/bg.png) no-repeat center center;
+        background-size: 100% 100%;
+        clip-path: polygon(0 .1%, 100% 0%, 100% 99.5%, 0% 100%) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .great-tool .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .great-tool .below-heading .tips-btn {
+        margin-top: 1rem;
+    }
+    .great-tool .text-left{
+        padding-left: 40px !important;
+    }
+    /* functionality start */
+    .functionality .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .functionality .body .main-img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .functionality .body .icon {
+        margin-top: 0!important;
+        text-align: center;
+    }
+    .functionality .below-heading .tips-btn {
+       margin-top: 1rem;
+    }
+    /* what we do start */
+    .what-we-do {
+        padding: 0 !important;
+        clip-path: polygon(0 .111%, 100% 0%, 100% 99.999%, 0% 100%);
+    }
+    .what-we-do .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .what-we-do .body{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .what-we-do .body h4 {
+        font-size: 2rem;
+    }
+    .what-we-do .body img{
+        width: 60%;
+    }
+    /* getting started start */
+    .getting-started{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .getting-started .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .getting-started .cards {
+        padding-top: 50px;
+    }
+    .getting-started .cards .body{
+        padding: 0 0 50px 0 !important;
+    }
+    .getting-started .tips-btn {
+        margin-top: 1rem;
+    }
+    .getting-started .body .card {
+        width: 50%;
+    }
+    /* testimonial start */
+    .testimonial-section .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item .main {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item>img{
+        display: none;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item {
+        height: 325px;
+    }
+    .testimonial-section .below-heading .tips-btn {
+        margin-top: 1rem;
+    }
+    /* stop wasting time start */
+    .stop-wasting-time .heading h2 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .stop-wasting-time .body .text-center img{
+        width: 50%;
+    }
+    .stop-wasting-time .below-heading .tips-btn {
+     margin-top: 1rem;
+    }
+    .stop-wasting-time .below-heading{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    /* footer start */
+    footer {
+        clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    footer .below-heading .tips-btn {
+      margin-top: 1rem;
+    }
 }

@@ -1056,6 +1056,34 @@ media query 576px to 767px
        margin-top: 1rem;
     }
 }
+/* ***********
+media query for 410px to 575px just for btn problem start
+********** */
+header .tips-btn {
+    margin-top: 0 !important;
+}
+.great-tool .below-heading .tips-btn {
+    margin-top: 0 !important;
+}
+.functionality .below-heading .tips-btn {
+    margin-top: 0 !important;
+ }
+ .getting-started .tips-btn {
+    margin-top: 0 !important;
+}
+.testimonial-section .below-heading .tips-btn {
+    margin-top: 0 !important;
+}
+.stop-wasting-time .below-heading .tips-btn {
+    margin-top: 0 !important;
+   }
+footer .below-heading .tips-btn {
+    margin-top: 0 !important;
+  }
+/* ***********
+media query for 410px to 575px just for btn problem end
+********** */
+
 /* *********
 media query for 320px to 575px
 ********* */

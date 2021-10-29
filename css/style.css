@@ -1063,12 +1063,28 @@ media query for 320px to 575px
     .navbar1{
         width: 55%;
         height: auto;
+        z-index: 10;
     }
     .navbar1 img{
         width: 80% !important;
     }
     .navbar1 ul {
         margin-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .navbar1 ul li {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .navbar1 .btn {
+        padding: 3px 12px;
+        font-size: 1rem;
+    }
+    .navbar1 ul li a {
+        font-size: 1rem;
+    }
+    .navbar1 .fa-2x {
+        font-size: 1rem;
     }
     header .signup-btn .btn {
         display: none;
@@ -1077,40 +1093,93 @@ media query for 320px to 575px
         margin-top: 0!important;
     }
     header h1 {
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
     header .tips-btn {
         margin-left: 0 !important;
         margin-top: 1rem;
-        font-size: 1.7rem;
     }
+    header .btn{
+        padding: 3px 12px;
+        font-size: 1rem;
+    }
+    header .signup-btn img {
+        margin-left: 0;
+        width: 25px;
+    }
+    
     /* values start */
+    .values {
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+    .values .icon {
+        padding-bottom: 0 !important;
+        padding-top: 15px !important;
+    }
     .values .icon .card {
         width: 50%;
+    }
+    .values .icon .card img {
+        width: 60px !important;
+    }
+    .values .icon .card p {
+        font-weight: 600;
+        font-size: 1.3rem;
     }
     /* great tool start */
     .great-tool {
         background: url(../Image/bg.png) no-repeat center center;
         background-size: 100% 100%;
-        clip-path: polygon(0 .1%, 100% 0%, 100% 99.5%, 0% 100%) !important;
+        clip-path: polygon(0 .0001%, 100% 0%, 100% 99.9%, 0% 100%) !important;
         margin: 0 !important;
         padding: 0 !important;
     }
+    .great-tool .heading {
+        padding-top: 0 !important;
+    }
     .great-tool .heading h2 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .great-tool .text-left p {
+        font-size: 1rem;
+    }
+    .great-tool .below-heading .mb-5{
+        margin-bottom: 0 !important;
+    }
+    .great-tool .below-heading h3 {
+        font-weight: 600;
+        font-size: 1.7rem;
+    }
+    .great-tool .below-heading .btn{
+        padding: 3px 12px;
+        font-size: 1rem;
     }
     .great-tool .below-heading .tips-btn {
         margin-top: 1rem;
+        margin-left: 0 !important;
     }
     .great-tool .text-left{
         padding-left: 40px !important;
     }
     /* functionality start */
+    .functionality {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
     .functionality .heading h2 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .functionality .body {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
     }
     .functionality .body .main-img{
         width: 60%;
@@ -1120,8 +1189,27 @@ media query for 320px to 575px
         margin-top: 0!important;
         text-align: center;
     }
+    .functionality .below-heading h3 {
+        font-weight: 700;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .functionality .body .icon p {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        padding: 8px 10px;
+        border-radius: 50px;
+        width: 220px;
+    }
+    .functionality .below-heading .btn{
+        padding: 3px 12px;
+        font-size: 1rem;
+    }
     .functionality .below-heading .tips-btn {
        margin-top: 1rem;
+       margin-left: 0 !important;
     }
     /* what we do start */
     .what-we-do {
@@ -1129,18 +1217,25 @@ media query for 320px to 575px
         clip-path: polygon(0 .111%, 100% 0%, 100% 99.999%, 0% 100%);
     }
     .what-we-do .heading h2 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
     }
     .what-we-do .body{
         margin: 0 !important;
         padding: 0 !important;
     }
     .what-we-do .body h4 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .what-we-do .body p {
+        font-size: 1rem;
     }
     .what-we-do .body img{
         width: 60%;
+    }
+    .what-we-do .body .btn {
+        padding: 3px 12px;
+        font-size: 1rem;
     }
     /* getting started start */
     .getting-started{
@@ -1148,8 +1243,8 @@ media query for 320px to 575px
         padding: 0 !important;
     }
     .getting-started .heading h2 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
     }
     .getting-started .cards {
         padding-top: 50px;
@@ -1157,16 +1252,63 @@ media query for 320px to 575px
     .getting-started .cards .body{
         padding: 0 0 50px 0 !important;
     }
+    .getting-started .cards .body .card::before {
+        content: '';
+        position: absolute;
+        top: -7%;
+        left: 35%;
+        font-size: 1rem;
+        border-radius: 100%;
+        background-color: #fff;
+        width: 47px;
+        padding: 15px;
+    }
+    .getting-started .cards .body .one::before{
+        content: '1';
+    }
+    .getting-started .cards .body .two::before{
+        content: '2';
+    }
+    .getting-started .cards .body .three::before{
+        content: '3';
+    }
+    .getting-started .cards .body .card img{
+        width: 36px !important;
+        margin-top: 0 !important;
+    }
+    .getting-started .cards .body .card h5 {
+        font-size: 1.3rem;
+    }
+    .getting-started .cards .body .card p {
+        font-size: 1.2rem;
+    }
     .getting-started .tips-btn {
         margin-top: 1rem;
     }
+    .getting-started .below-heading .mb-5{
+        margin-bottom: 0 !important;
+    }
+    .getting-started .below-heading h3 {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        margin: 0 auto !important;
+    }
+    .getting-started .tips-btn {
+        margin-left: 0 !important;
+    }
+    .getting-started .below-heading .btn {
+        padding: 3px 12px;
+        font-size: 1rem;
+    }
     .getting-started .body .card {
         width: 50%;
+        height: auto !important;
     }
     /* testimonial start */
     .testimonial-section .heading h2 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        word-wrap: break-word !important;
     }
     .testimonial-section .carousel .carousel-inner .carousel-item .main {
         position: relative;
@@ -1176,22 +1318,48 @@ media query for 320px to 575px
     .testimonial-section .carousel .carousel-inner .carousel-item>img{
         display: none;
     }
+    .testimonial-section .carousel .carousel-inner .carousel-item p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
     .testimonial-section .carousel .carousel-inner .carousel-item {
         height: 325px;
+        width: 100%;
+    }
+    .testimonial-section .carousel .carousel-inner .carousel-item .main img{
+        width: 140px !important;
+    }
+    .testimonial-section .below-heading{
+        margin-bottom: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
     }
     .testimonial-section .below-heading .tips-btn {
         margin-top: 1rem;
+        margin-left: 0 !important;
+    }
+    .testimonial-section .below-heading .btn{
+        padding: 3px 12px;
+        font-size: 1.2rem;
     }
     /* stop wasting time start */
     .stop-wasting-time .heading h2 {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
     }
     .stop-wasting-time .body .text-center img{
         width: 50%;
     }
+    .stop-wasting-time .body p {
+        font-size: 1.1rem;
+    }
     .stop-wasting-time .below-heading .tips-btn {
      margin-top: 1rem;
+     margin-left: 0 !important;
+    }
+    .stop-wasting-time .below-heading .btn{
+        padding: 3px 12px;
+        font-size: 1.2rem;
     }
     .stop-wasting-time .below-heading{
         padding: 0 !important;
@@ -1201,7 +1369,63 @@ media query for 320px to 575px
     footer {
         clip-path: polygon(0 2%, 100% 0%, 100% 100%, 0% 100%);
     }
+    footer .img-fluid {
+        max-width: 75%;
+        height: auto;
+    }
+    footer .heading p {
+        font-size: 1.2rem;
+    }
     footer .below-heading .tips-btn {
       margin-top: 1rem;
+    }
+    footer .below-heading .btn{
+        padding: 3px 12px;
+        font-size: 1.2rem;
+    }
+    footer .inner-footer .call-btn {
+        padding: 3px 12px;
+        font-size: 1.2rem;
+    }
+    footer .inner-footer ul .text-white {
+        font-size: 1.5rem;
+    }
+    footer .inner-footer ul li a {
+        font-size: 1.1rem;
+    }
+    /* modal start here */
+    .modal{
+        width: 70%;
+        margin: auto;
+    }
+    .modal h4{
+        font-size: 1.5rem;
+    }
+    .modal .modal-body .text{
+        padding: 0 !important;
+    }
+    .modal .modal-body .text p{
+        font-size: 1rem;
+    }
+    .modal .modal-body .form {
+        padding: 1rem!important;
+        width: 100% !important;
+    }
+    .modal .modal-body .form .form-group label{
+        font-size: 1.1rem !important;
+    }
+    .modal .below-heading .btn{
+        padding: 3px 12px;
+        font-size: 1rem
+    }
+    .modal .below-heading p{
+        font-size: 1.1rem;
+    }
+    #myModal2 .below-heading .btn{
+        padding: 3px 12px;
+        font-size: 1rem
+    }
+    #myModal2 .modal-body .form .form-group label{
+        font-size: 1.1rem !important;
     }
 }
